@@ -75,6 +75,7 @@ $('.new-tweet form').submit(function(event) {
     $.post('/tweets', msg).then(() => {
       console.log('successful post');
       loadTweets();
+      $('.new-tweet').slideToggle('normal');
     })
   }
   return event.preventDefault();
@@ -82,6 +83,6 @@ $('.new-tweet form').submit(function(event) {
 
 
 //When user hits the 'write a new tweet' it will display the tweet create section
-$('.create-tweet').on("click", () => {
+$('.toggle-new-tweet').on("click", () => {
   return $('.new-tweet').slideToggle('slow')
 })

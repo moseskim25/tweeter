@@ -11,17 +11,6 @@
   padding-top: 0;
 }
 
-.create-tweet:hover {
-  font-weight: 400;
-  cursor: pointer;
-}
-
-/*styles the 'write a new tweet' seen inside the nav bar*/
-.create-tweet {
-  font-family: sans-serif;
-  font-style: lighter;
-  font-weight: 100;
-}
 
 /*the create new tweet section*/
 .new-tweet {
@@ -43,7 +32,6 @@
   font-style: normal;
   font-size: 14px;
   box-shadow: 0 2px 5px 1px rgb(50 66 94 / 50%);
-  /* border: solid 0.5px ; */
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 3px;
@@ -51,7 +39,6 @@
 }
 /* the footer below the tweet textbox */
 .new-tweet footer {
-  /* width: 95%; */
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -157,14 +144,7 @@
     flex-direction: column;
     align-items: center;
   }
-  nav {
-    height: 5vh;
-    font-size: 12px;
-    padding-bottom: 0.25em;
-  }
-  .name {
-    font-size: 3vh;
-  }
+
 
   /* container holds the tweets sections*/
   .container {
@@ -183,6 +163,7 @@
 
   #tweet-text {
     width: 100%;
+    outline: none;
   }
 
   /* profile pic and name*/
@@ -198,27 +179,9 @@
   img {
     height: 25vh;
   }
-
-  /* write a new tweet */
-  .create-tweet {
-    font-size: 12px;
-  }
-
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    height: 120px;
-    font-size: 12px;
-    padding: 4%;
-    padding-bottom: 0.5em;
-    font-size: xx-large;
-    align-items: flex-end;
-  }
-  .name {
-    font-size: xx-large;
-  }
-
   /* this makes the profile pic and the tweets container side by side */
   body {
     display: flex;
